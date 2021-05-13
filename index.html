@@ -7,8 +7,17 @@ body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
+  color: #e0c475;
 }
+/* sets the background image and reside it according to the page size*/
+html { 
+  background: url(Images/TreasureMapV1Croped.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
@@ -59,6 +68,9 @@ img {
   display: block;
 }
 
+
+
+
 </style>
 </head>
 <body>
@@ -74,12 +86,37 @@ img {
 </div>
  -->
 
+<!--
 <img src="Images/TreasureMapV1.png" width="751" height="569" class="center">
 
-
-
 <center>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfaKHSMR3btgmmDkQeC0xZbWEU7mWns81PUnEE1nL9VnHJs3A/viewform?embedded=true" width="640" height="945" frameborder="0" marginheight="0" scrolling="no" marginwidth="0">Loading…</iframe></center>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfaKHSMR3btgmmDkQeC0xZbWEU7mWns81PUnEE1nL9VnHJs3A/viewform?embedded=true"
+ frameborder="0" marginheight="0" width="640" height="2945" allowfullscreen
+ scrolling="no" marginwidth="0" >Loading…</iframe>
+</center>
+#f5e0cd - island colour
+#54c6ec - sea colour
+-->
+
+<!--
+#f5e0cd - island colour
+#54c6ec - sea colour
+The frame is set to 45% of the sceen size (the width property)
+the coloured background area resizes accordingly, relatibve to the screen size
+-->
+<iframe 
+  src="https://docs.google.com/forms/d/e/1FAIpQLSfaKHSMR3btgmmDkQeC0xZbWEU7mWns81PUnEE1nL9VnHJs3A/viewform?embedded=true"
+  scrolling="auto" 
+  allowtransparency="true" name="main" 
+  style="width:45%;height:100%;
+    background:#f5e0cd;border: 10px solid #54c6ec; 
+    margin-left: auto;  margin-right: auto; display: block;> 
+  Loading... 
+</iframe>
+
+<!-- no idea why we need this div, but it forces the iframe to be the top -->
+<div class="foo">
+</div> 
 
 </body>
 </html>
